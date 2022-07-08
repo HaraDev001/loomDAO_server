@@ -1,0 +1,54 @@
+### CREATE A USER
+POST http://localhost:3004/api/v1/users/create
+content-type: application/json
+
+{
+  "profile": {
+    "firstName": "leroy",
+    "lastName": "gilbert",
+    "email": "leroy@email.com",
+    "phone": "0987320982",
+    "username": "leroy124",
+    "companyName": "Jira"
+  },
+  "walletAddress": "0982308973209849iopdjrf-0923=-ok213=-04i0-",
+  "role": "Heirloomer"
+}
+
+### update
+PUT http://localhost:3004/api/v1/users/update/4
+content-type: application/json
+
+{
+  "firstName": "leroy",
+  "lastName": "gilbert",
+  "email": "leroy@email.com",
+  "phone": "0987320982",
+  "username": "leroy124",
+  "companyName": "Jira",
+  "walletAddress": "0982308973209849iopdjrf0923ok2104i009584",
+  "role": "Heirloomer"
+}
+
+### find one user by id
+GET http://localhost:3004/api/v1/users/1
+content-type: application/json
+
+### deleteOne user by id
+DELETE http://localhost:3004/api/v1/users/4
+content-type: application/json
+
+### find user by wallet address
+GET http://localhost:3004/api/v1/users/wallet/0xede3e3f6eef1669ef11eeacf1aeeed80baffe14e
+content-type: application/json
+
+### find all users with or without query
+GET http://localhost:3004/api/v1/users?email=Asha_Reichel@gmail.com
+content-type: application/json
+
+
+
+
+
+
+

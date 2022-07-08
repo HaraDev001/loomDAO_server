@@ -1,0 +1,73 @@
+### CREATE A USER
+POST http://localhost:3004/api/v1/licenses/create
+content-type: application/json
+
+{
+  "profile": {
+    "firstName": "leroy",
+    "lastName": "gilbert",
+    "email": "leroy@email.com",
+    "phone": "0987320982",
+    "username": "leroy124",
+    "companyName": "Jira"
+  },
+  "walletAddress": "0982308973209849iopdjrf-0923=-ok213=-04i0-",
+  "role": "Heirloomer"
+}
+
+### find all licenses w/wo query
+GET http://localhost:3004/api/v1/licenses
+content-type: application/json
+
+### find one license by licenseId
+GET http://localhost:3004/api/v1/licenses/1
+content-type: application/json
+
+### list a license
+POST http://localhost:3004/api/v1/licenses/list/1
+content-type: application/json
+
+{
+  "firstName": "leroy",
+  "lastName": "gilbert",
+  "email": "leroy@email.com",
+  "phone": "0987320982",
+  "username": "leroy124",
+  "companyName": "Jira",
+  "walletAddress": "0982308973209849iopdjrf0923ok2104i009584",
+  "role": "Heirloomer"
+}
+
+### update by listed license by license Id
+PUT http://localhost:3004/api/v1/licenses/listed/1
+content-type: application/json
+
+{
+  "firstName": "leroy",
+  "lastName": "gilbert",
+  "email": "leroy@email.com",
+  "phone": "0987320982",
+  "username": "leroy124",
+  "companyName": "Jira",
+  "walletAddress": "0982308973209849iopdjrf0923ok2104i009584",
+  "role": "Heirloomer"
+}
+
+### find one license by licenseId
+GET http://localhost:3004/api/v1/licenses/listed/1
+content-type: application/json
+
+### find all listed license with or without query
+GET http://localhost:3004/api/v1/licenses/listed
+content-type: application/json
+
+
+
+
+
+
+
+
+
+
+
